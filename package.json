@@ -1,0 +1,10 @@
+{
+  "name": "ashtavinayak-trust-site",
+  "version": "1.0.0",
+  "description": "Trust website with annadan donation API",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --check server.js && node --check script.js"
+  }
+}

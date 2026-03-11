@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="mr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>देणगी | अष्टविनायक ट्रस्ट</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Tiro+Devanagari+Marathi:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="sub-hero">
+      <nav class="nav">
+        <div class="logo">॥ श्री गजानन ॥</div>
+        <div class="nav-links">
+          <a href="index.html">मुख्यपृष्ठ</a>
+          <a href="about.html">आमच्या विषयी</a>
+          <a href="annadan.html">अन्नदान</a>
+          <a href="donate.html" class="active">देणगी</a>
+        </div>
+      </nav>
+      <h1>अन्नदानासाठी ऑनलाईन देणगी</h1>
+      <p>आपली देणगी थेट अन्नसेवा आणि कार्यक्रम व्यवस्थापनासाठी वापरली जाते.</p>
+    </header>
+
+    <main>
+      <section class="donate">
+        <h2>देणगी नोंदणी</h2>
+        <p>खालील माहिती भरून आपल्या पसंतीच्या UPI अ‍ॅपची पेमेंट लिंक मिळवा.</p>
+        <form id="donationForm" class="donation-form">
+          <label>
+            पूर्ण नाव
+            <input type="text" name="name" required />
+          </label>
+          <label>
+            मोबाईल क्रमांक
+            <input type="tel" name="phone" pattern="[0-9]{10}" required />
+          </label>
+          <label>
+            ईमेल (ऐच्छिक)
+            <input type="email" name="email" />
+          </label>
+          <label>
+            देणगी रक्कम (INR)
+            <input type="number" name="amount" min="101" step="1" required />
+          </label>
+          <label>
+            संदेश / संकल्प (ऐच्छिक)
+            <input type="text" name="message" />
+          </label>
+          <button type="submit" class="btn btn-primary">पेमेंट लिंक तयार करा</button>
+        </form>
+        <div id="paymentResult" class="payment-result hidden"></div>
+      </section>
+    </main>
+
+    <footer>
+      <p>© <span id="year"></span> अष्टविनायक महाअन्नदान सोहळा ट्रस्ट • देहू, पुणे</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
